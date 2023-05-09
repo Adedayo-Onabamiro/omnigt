@@ -1,0 +1,693 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #111826;
+}
+
+                                                
+.buttons{
+    width: fit-content;
+    padding: 10px 5px;
+    background-color: #1FC77E;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+}
+#introSection{
+    height: 100%;
+    min-height: 100vh;
+    width: 80%;
+    padding: 0 10%;
+    background-color: #111826;
+    margin-bottom: 5%;
+}
+/* start of navigation */
+.navBox{
+    height: fit-content;
+    max-height: 100px;
+    width: 99%;
+    margin-bottom: 5%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 1.7rem;
+    color: white;
+    font-weight: bold;
+    font-family: 'FS Meridian Trial', sans-serif;
+                                                
+}
+.navBox ul{
+    height: auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;   
+    text-decoration: none;   
+}
+.navBox li a, .navBox li{
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;                                             
+}
+.navBox li a:hover{
+    color: #1FC77E;
+}
+/* end of navigation */
+.introContentBox{
+    margin-top: 3%;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.split1{
+    display: flex;
+    flex: 50%;
+    height: 100%;
+    flex-direction: column;
+}
+.split1MegaTextBox{
+    width: 100%;
+    position: relative;
+    font-family: 'FS Meridian Trial', sans-serif;
+}
+.split1MegaTextBox img{
+    position: absolute;
+    bottom: -10%;
+    left: -1%;
+    opacity: 80%;
+    /* left: -10%; */
+}
+.split1 h1{
+    color: white;
+    font-size: 4.5rem;
+    margin-bottom: 0;
+    font-weight: 400;
+    position: relative;
+    z-index: 10;
+    font-family: 'FS Meridian Trial', sans-serif;
+                                                
+}
+.split1 h3{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-family: 'General Sans', sans-serif;
+}
+.split1 p{
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 0;
+    font-family: 'General Sans', sans-serif;
+}
+.split2{
+    display: flex;
+    flex: 35%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+.split2 .vectorBox{
+    height: 25%;
+    max-height: 20vh;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-around;
+}
+.split2 .vectorBox i{
+    color: white;
+    font-size: 2.5rem;
+}
+.bubble{
+    position: relative;
+    height: 70%;
+    width: 100%;
+    max-width: 343px;
+    max-height: 218px;
+    background: #FEEA00;
+    border-radius: 67px 0px 67px 67px;
+}
+.bubble img{
+    height: 170%;
+    bottom: 0;
+    width: 90%;
+    position: absolute;
+    object-fit: contain;
+}
+.reversebubble{
+    height: 70%;
+    width: 70%;
+    max-height: 218px;
+    background: #7F3DD2;
+    border-radius: 67px 67px 67px 0px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.reversebubble p{
+    height: fit-content;
+    width: 60%;
+    color: white;
+    font-family: 'General Sans', sans-serif;
+    padding: 5%;
+}
+.circle{
+    height: 100%;
+    max-height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pill{
+    height: 70%;
+    width: 100%;
+    max-width: 333px;
+    max-height: 140.5px;
+    background: #F4FAFF;
+    border-radius: 67px;
+    position: relative;
+}
+.pill img{
+    height: 170%;
+    bottom: 0;
+    width: 90%;
+    position: absolute;
+    object-fit: contain;
+}
+.balloon{
+    height: 70%;
+    width: 100%;
+    max-width: 108px;
+    max-height: 108px;
+    background: #FEEA00;
+    border-radius: 0px 58px 58px 58px;
+    transform: rotate(-90deg);
+}
+
+/* start of phone section */
+#phoneImageSection{
+    height: 80vh;
+    margin-bottom: 5%;
+    width: 100%;
+    width: 90%;
+    padding: 0 5%;
+    background-color: #111826;
+    border: 1px solid red;
+}
+.phoneImageBox{
+    height: 100%;
+    width: 80%;
+    margin: 0 10%;
+    background-color: black;
+}
+/* start of phone section */
+
+/* start of aioSection */
+#aioSection{
+    height: 100%;
+    /* max-height: 100vh; */
+    width: 100%;
+    width: 90%;
+    padding: 0 5%;
+    margin-bottom: 5%;
+    background-color: #111826;
+}
+.aioSectionBox{
+    height: 100%;
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.aioSectionBox .split1{
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+}
+.aioSectionBox .split2{
+    padding: 0 2%;
+    height: 100%;
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.aioSectionBox .split2 h1{
+    color: white;
+    font-size: 4rem;
+    font-family: 'FS Meridian Trial', sans-serif;
+}
+.SeamlessCollaborationBox{
+    height: 20%;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2%;
+}
+.SeamlessCollaborationBox span{
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'General Sans', sans-serif;
+}
+.SeamlessCollaborationBox p{
+    width: 70%;
+    font-family: 'General Sans', sans-serif;
+}
+.Split2Content{
+    height: 20%;
+    width: 100%;
+    color: white;
+    border-bottom: 1px solid white;
+    margin-top: 5%;
+}
+.Split2Content h3{
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'General Sans', sans-serif;
+}
+
+
+/* accesiblePricingSection starts */
+#accesiblePricingSection{
+    width: 100%;
+    min-height: 100vh;
+    width: 90%;
+    padding: 0 5%;
+    margin-bottom: 5%;
+    background-color: #111826;
+}
+.accesiblePricingSectionBox{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'FS Meridian Trial', sans-serif;
+}
+.accesiblePricingSectionBox h1{
+    font-size: 2.8rem;
+    color: white;
+    width: 30%;
+    text-align: center;
+    height: fit-content;
+    /* border: 1px solid white; */
+}
+.priceCard{
+    height: 100%;
+    min-height: 70vh;
+    border: 1px solid #ffffff95;
+    background-color: #2a303b;
+    width: 23%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.PCline{
+    height: 20%;
+    margin-bottom: 10%;
+    width: 100%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+.PCline ul li{
+    list-style: none;
+    padding: 10px 0px;
+}
+.PCline ul li::before{
+    padding-right: 10px;
+    content: '\2713';
+    border: 1px solid white;
+    background-color: #ffffff95;
+    font-weight: bold;
+    color: #111826;
+    margin-right: 20px;
+    padding: 1.5px 3px;
+    height: 100%;
+    max-height: 20px;
+    font-size: 10px;
+    width: fit-content;
+    border-radius: 50%;
+}
+
+/* integrationsSection ends */
+
+
+/* integrationsSection starts */
+#integrationsSection{
+    height: 100%;
+    min-height: 100vh;
+    background-color: black;
+    width: 80%;
+    padding: 5% 10%;
+    font-family: 'FS Meridian Trial', sans-serif;
+    margin-bottom: 5%;
+}
+#integrationsSection h1{
+    font-size: 3.5rem;
+    color: white;
+}
+.ISContentBox{
+    height: 100%;
+    min-height: 80vh;
+    width: 100%;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.grid-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ISContent{
+    height: 150px;
+    width: 100%;
+    max-width: 320px;
+    padding: 2% 2%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    margin: 2%;
+}
+.ISContentTop{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ISContentTop img{
+    object-fit: contain;
+    height: 35px;
+    margin-right: 20px;
+}
+.ISContentBottom{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'General Sans', sans-serif;
+}
+/* integrationsSection ends */
+
+#SeeWhatSection{
+    height: 100%;
+    min-height: 100vh;
+    background-color: #111826;
+    width: 80%;
+    padding: 0 10%;
+    font-family: 'FS Meridian Trial', sans-serif;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+#SeeWhatSection .top{
+    height: 20vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#SeeWhatSection h1{
+    font-size: 3rem;
+    color: white;
+    margin: 0;
+}
+.StarBoxContainer{
+    height: fit-content;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    position: absolute;
+    top: -3%;
+    left: 0;
+    z-index: 10;
+}
+.StarBox{
+    height: fit-content;
+    width: 30%;
+}
+.StarBox img{
+    max-height: 100px;
+    object-fit: contain;
+}
+#SeeWhatSection .bottom{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    height: 100%;
+    width: 90%;
+    padding: 0 5%;
+    /* padding: 80px; */
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+      text-align: center;
+      padding: 20px;
+      background: transparent;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}
+.slide{
+    height: 80%;
+    width: 45%;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'General Sans', sans-serif;
+}
+.slideContent{
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.starBox{
+    height: fit-content;
+    width: fit-content;
+}
+.starBox img{
+    height: 30px;
+    object-fit: contain;
+}
+.imageDiv{
+    height: 50px;
+    width: 50px;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #888;
+}
+
+#experienceSection{
+    background-color: black;
+    height: 60vh;
+    width: 80%;
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    font-family: 'FS Meridian Trial', sans-serif;
+    position: relative;
+}
+.experienceSectionBox{
+    background-color: #1FC77E;
+    border-radius: 15px;
+    width: 65%;
+    padding: 0 5%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: -15%;
+}
+.experienceSectionBox .one{
+    flex: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+}
+.experienceSectionBox .one h1{
+    font-size: 3rem;
+    margin: 0;
+}
+.experienceSectionBox .one p{
+    font-size: 2rem;
+    font-weight: 100;
+    width: 85%;
+}
+.experienceSectionBox .two{
+    flex: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.experienceSectionBox .two .buttons{
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+}
+
+/*START OF FOOTER SECTION*/
+#footer{
+    background-color: black;
+    color: white;
+    width: 80%;
+    height: 50vh;
+    padding: 0 10%;
+    font-family: 'General Sans', sans-serif;
+}
+.footer_container{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+#footer .logo{
+    margin: 5%;
+    height: 30px;
+    object-fit: contain;
+}
+.footer_link--wrapper{
+    display: flex;
+    width: 100%;
+}
+.footer_link--items{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: inherit;
+    align-items: flex-start;
+    text-align: left;
+    box-sizing: border-box;
+}
+.footer_link--items a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.footer_link--items a:hover{
+    color: #1FC77E;
+    transition: 0.3s ease-out;
+}
+.footer_link--items img{
+    height: 30px;
+    width: 25px;
+    object-fit: contain;
+    padding-right: 20px;
+}
+/*Social Media Icons Ends*/
+
+/*END OF FOOTER SECTION*/
