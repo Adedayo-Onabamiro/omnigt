@@ -18,20 +18,23 @@ body{
     padding: 0 10%;
     background-color: #111826;
     margin-bottom: 5%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 /* start of navigation */
-.navBox{
+/* .navBox{
     height: fit-content;
     max-height: 100px;
     width: 99%;
     margin-bottom: 5%;
-    /* border: 1px solid green; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: 1px solid white;
 }
+.navBox .navBox-toggler {
+    display: none;
+}
+
 .logo{
     font-size: 1.7rem;
     color: white;
@@ -59,27 +62,88 @@ body{
 }
 .navBox li a:hover{
     color: #1FC77E;
+} */
+.navigationBox{
+    height: fit-content;
+    position: relative;
+    margin-bottom: 5%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.navbar {
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    font-size: 1.1rem;
+    padding: 0 30px;
+    z-index: 1000;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .logoBox{
+    height: 100%;
+    width: auto;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar .navbar-brand {
+    max-height: 200px;
+    max-width: 200px;
+  }
+  .navbar ul {
+    width: auto;
+    float: right;
+    list-style: none;
+    height: inherit;
+    margin: 0;
+  }
+  .navbar ul li {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;    
+  }
+  .navbar ul li a {
+    display: block;
+    text-align: center;
+    /* min-width: 120px; */
+    padding: 0 20px;
+  }
+  .navbar li a:hover{
+    color: #1FC77E;
+}
+  .navbar .navbar-toggler {
+    display: none;
+  }
+  
 /* end of navigation */
 .introContentBox{
+    min-height: 80vh;
     height: 80%;
     width: 100%;
     display: flex;
     flex-direction: row;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .split1{
     display: flex;
     flex: 50%;
     height: 80vh;
-    border: 1px solid white;
     flex-direction: column;
 }
 .split1MegaTextBox{
     width: 100%;
     position: relative;
     font-family: 'FS Meridian Trial', sans-serif;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .split1MegaTextBox img{
     position: absolute;
@@ -122,17 +186,18 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-.introContentBox .split2 .vectorBox{
+.introContentBox .split2 .vectorBox, .vectorBoxO{
     height: 25%;
     /* max-height: 20vh; */
     width: 100%;
     display: flex;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* justify-content: center; */
     align-items: center;
     justify-content: space-around;
 }
-.introContentBox .split2 .vectorBox i{
+
+.introContentBox .split2 .vectorBox i, .vectorBoxO{
     color: white;
     font-size: 2.5rem;
 }
@@ -213,7 +278,7 @@ body{
     width: 90%;
     padding: 0 5%;
     background-color: #111826;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .phoneImageBox{
     height: 100%;
@@ -244,9 +309,42 @@ body{
     height: 100%;
     min-height: 100vh;
     display: flex;
-    border: 1px solid white;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    position: relative;
+    /* width: 80%; */
+    /* justify-content: center;
+    align-items: center; */
+}
+.phoneBackBox .circle, .phoneBackBox.balloon{
+    height: 15vh;
+    width: 15vh;
+}
+.phoneBackBox .circle img, .phoneBackBox .balloon img{
+    height: 80%;
+    width: auto;
+    object-fit: contain;
+}
+.phoneBackBox{
+    margin: 10% 0;
+    height: 20vh;
+    width: 100%;
+    background-color:transparent;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.aioSectionBox .split1 .phoneBox{
+    /* border: 1px solid red; */
+    z-index: 10;
+    position: absolute;
+    height: 95vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
 }
 .aioSectionBox .split2{
     padding: 0 2%;
@@ -483,6 +581,7 @@ body{
     background-color: transparent;
     justify-content: center;
     align-items: center;
+    color: #ffffff90;
   }
   
   /* Next & previous buttons */
@@ -545,7 +644,7 @@ body{
     min-height: 400px;
     width: 45%;
     border-radius: 10px;
-    background-color: white;
+    background-color: #414651;
     display: flex;
     flex-direction: column;
     margin-right: auto;
@@ -596,7 +695,6 @@ body{
 
 #experienceSection{
     background-color: black;
-    border: 1px solid red;
     height: 100%;
     min-height: 60vh;
     width: 80%;
@@ -671,7 +769,6 @@ body{
     flex-direction: column;
     align-items: center;
     width: auto;
-    border: 1px solid red;
 }
 #footer .logo{
     margin: 5%;
@@ -681,6 +778,11 @@ body{
 .footer_link--wrapper{
     display: flex;
     width: 100%;
+}
+.footer_link--itemsBox{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 .footer_link--items{
     display: flex;
@@ -715,11 +817,15 @@ body{
 @media screen and (min-width: 1720px){
     .split1MegaTextBox img{
         width: fit-content;
-        border: 1px solid red;
+    }
+}
+@media screen and (min-width: 1070px){
+    .phoneBackBox{
+        width: 80%;
     }
 }
 @media screen and (max-width: 1110px){
-    .split1 h1{
+    .introContentBox .split1 h1{
         color: white;
         font-size: 3.5rem;                                         
     }
@@ -735,20 +841,33 @@ body{
     }
 }
 @media screen and (max-width: 900px){
-    .navBox ul{
-        display: none;
+    .introContentBox .split2 .vectorBox{
+        justify-content: space-between;
     }
-    /* .v2 .circle, .v3 .reversebubble, .v4 .balloon{
-        display: none;
-    } */
     .introContentBox{
         flex-direction: column-reverse;
+    }
+    .bubble{
+        position: relative;
+        /* height: 70%;
+        width: 70%; */
+        width: 60%;
+        max-width: 343px;
+        height: 80px;
+        background: #FEEA00;
+        border-radius: 67px 0px 67px 67px;
+    }
+    .vectorBoxO{
+        display: none;
     }
     .split1 .buttons{
         width: 100%;
     }
     .aioSectionBox{
         flex-direction: column-reverse;
+    }
+    .aioSectionBox .split1{
+        width: 60%;
     }
     #accesiblePricingSection{
         display: none;
@@ -785,6 +904,92 @@ body{
         object-fit: contain;
     }
 }
+
+@media screen and (max-width: 790px) {
+    .navbar {
+        padding: 0; 
+        background-color: #111826;
+        width: 100%;
+        /* margin: 0 10%; */
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      .navbar ul {
+        width: 100%;
+        padding: 0;
+        /* background-color: rgba(0,0,0,0.9); */
+        background-color: #1FC77E;
+        /* height: auto; */
+        height: 100vh;
+        max-height: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        transition: all ease-in-out 0.3s;
+      }
+      .navbar ul.open {
+        max-height: 100vh;
+      }
+      .navbar ul li {
+        width: 100%;
+        /* border-bottom: 1px solid rgba(255,255,255,0.3); */
+      }
+      .navbar ul li a {
+        padding: 0;
+      }
+      .navbar .navbar-toggler {
+        display: block;
+        position: absolute;
+        height: 40px;
+        top: 30px;
+        right: 20px;
+        background-color: transparent;
+        color: #fff;
+        border: 3px solid #fff;
+        /* border: none; */
+        /* border-radius: 4px; */
+        outline: none;
+        padding: 0 5px;
+        cursor: pointer;
+      }
+      .navbar .navbar-toggler span,
+      .navbar .navbar-toggler span::before,
+      .navbar .navbar-toggler span::after {
+        display: block;
+        content: '';
+        background-color: #fff;
+        height: 3px;
+        width: 28px;
+        border-radius: 4px;
+        transition: all ease-in-out 0.3s;
+      }
+      .navbar .navbar-toggler span::before {
+        transform: translateY(-8px);
+      }
+      .navbar .navbar-toggler span::after {
+        transform: translateY(5px);
+      }
+      
+      .navbar .navbar-toggler.open-navbar-toggler span {
+        /* transform: rotate(90deg); */
+        background-color: transparent;
+        /* transform: scale(0.85) rotate(270deg); */
+      }
+      .navbar .navbar-toggler.open-navbar-toggler span::before {
+        transform: translateY(0px) rotate(45deg);
+        /* transform: translateY(0px) scale(0.75) rotate(45deg); */
+      }
+      .navbar .navbar-toggler.open-navbar-toggler span::after {
+        transform: translateY(-3px) rotate(-45deg);
+        /* transform: translateY(-3px) scale(0.75) rotate(-45deg); */
+      }
+      .aioSectionBox .split1{
+        width: 80%;
+    }
+    
+}
 @media screen and (max-width: 650px){
     .introContentBox .split1 h1{
         color: white;
@@ -802,4 +1007,65 @@ body{
         flex-direction: column;
         margin-top: 10%;
     }
+}
+
+@media screen and (max-width: 450px){
+    .bubble img{
+        height: 200%;
+        bottom: -30%;
+        width: 90%;
+        position: absolute;
+        object-fit: contain;
+    }
+    .aioSectionBox .split2 h1{
+        font-size: 1.5rem;
+    }
+    .SeamlessCollaborationBox span{
+        font-size: 1.3rem;
+    }
+    .SeamlessCollaborationBox p{
+        width: 100%;
+    }
+    .aioSectionBox .Split2Content h3{
+        font-size: 1.2rem;
+    }
+    .experienceSectionBox .one h1{
+        text-align: center;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .experienceSectionBox .one p{
+        font-size: 1.1rem;
+        text-align: center;
+        width: 100%;
+    }
+    .experienceSectionBox .two .buttons{
+        background-color: black;
+        color: white;
+        font-size: .7rem;
+        border: none;
+    }
+    .slide{
+        width: 100%;
+        height: fit-content;
+        min-height: auto;
+    }
+    .slide2{
+        display: none;
+    }
+    .aioSectionBox .split1{
+        width: 100%;
+    }
+    .phoneBox{
+        width: 80%;
+        height: 50vh;
+    }
+    .phoneBackBox{
+        display: none;
+    }
+    /* .phoneBox img{
+        width: 80%;
+        height: 50vh;
+        object-fit: contain;
+    } */
 }

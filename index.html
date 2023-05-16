@@ -15,22 +15,43 @@
 <body>
     
 <section id="introSection">
-    <div class="navBox">
+    <!-- <div class="navBox">
         <img class="logo" src="/images/Group 13342.png">
+        <button class="navBox-toggler">
+            <span></span>
+          </button>
         <ul>
             <li> <a href="">Blog</a> </li>
             <li> <a href="">Contact us</a> </li>
             <li> <a href="">Sign in</a> </li>
         </ul>
+    </div> -->
+
+    <div class="navigationBox">
+        <nav class="navbar">
+            <div class="logoBox">
+                <img class="navbar-brand" src="/images/Group 13342.png">
+            </div>
+            <ul>
+              <li><a href="#html">HTML</a></li>
+              <li><a href="#css">CSS</a></li>
+              <li><a href="#javascript">JavaScript</a></li>
+            </ul>
+            <button class="navbar-toggler">
+              <span></span>
+            </button>
+          </nav>
     </div>
 
     <div class="introContentBox">
         <div class="split1">
             <div class="split1MegaTextBox">
-                <h1>Seamless Communication <br> with OmniGPT</h1>
+                <h1>Bring the power <br>
+                    of AI to your <br>
+                    conversations</h1>
                 <img src="/images/Graphic_Elements.png">
             </div>
-            <h3>Powered by Chat GPT-4</h3>
+            <h3>Work Faster, Smarter, and Better Together</h3>
             <p style="color: #ffffff95;">Experience the power of AI language models with OmniGPT.
                 Our chat platform provides seamless communication
                 across multiple channels.</p>
@@ -39,22 +60,22 @@
         </div>
 
         <div class="split2">
-            <div class="vectorBox v1">
+            <div class="vectorBox">
                 <div class="bubble"> <img src="/images/pexels-fauxels-3182812 Background Removed 1.png"> </div>
                 <div style="background-color: #7F3DD2;" class="circle"> <i style="transform: rotate(45deg);" class='fa-solid fa-arrow-left-long'></i> </div>
             </div>
-            <div class="vectorBox v2">
+            <div class="vectorBoxO">
                 <div style="background-color: #1FC77E;" class="circle"> <i style="transform: rotate(-45deg);" class='fa-solid fa-arrow-right-long '></i> </div>
                 <div class="pill"> <img src="/images/pexels-kindel-media-7688458 Background Removed 1.png"> </div>
             </div>
-            <div class="vectorBox v3">
+            <div class="vectorBoxO">
                 <div class="reversebubble">
                     <p>@OmniGPT Can you give us
                         an update on the latest project
                         status?</p>
                 </div>
             </div>
-            <div class="vectorBox v4">
+            <div class="vectorBoxO">
                 <div style="background-color: #1FC77E;" class="bubble"> <img src="/images/pexels-andrea-piacquadio-920382 Background Removed 1.png"></div>
                 <div class="balloon"> </div>
             </div>
@@ -73,8 +94,18 @@
 <section id="aioSection">
     <div class="aioSectionBox">
         <div class="split1">
-            <img style="object-fit: contain; height: 90vh; position: relative; z-index: 1;" src="/images/apple-iphone-14-pro-max-2022-medium 1.png">
-            <img style="object-fit: cover; height: 85vh; position: absolute;" src="/images/Rectangle 13053.png">
+            <div class="phoneBackBox">
+                <div style="background-color: transparent;" class="circle"> <img src="/images/Facebook_Messenger_logo_2020 1.png"> </div>
+                <div class="balloon" style="background-color: yellow;margin-top: 20%;"></div>
+            </div>
+            <div class="phoneBackBox">
+                <div class="balloon" style="background-color: #1FC77E; margin-bottom: 20%;"></div>
+                <div style="background-color: white;" class="circle"> <img src="/images/WhatsApp 1.png"> </div>
+            </div>
+            <div class="phoneBox">
+                <img style="object-fit: contain; height: 90vh; z-index: 1;position: relative;" src="/images/apple-iphone-14-pro-max-2022-medium 1.png">
+                <img style="object-fit: contain; height: 87vh; position: absolute; top: 0; margin-top: 2vh;" src="/images/Rectangle 13053.png">             
+            </div>
         </div>
         <div class="split2">
             <h1> The <span style="color: #1FC77E;"> All-in-One</span>
@@ -271,7 +302,7 @@
         <div class="slideshow-container">
 
             <div class="mySlides">
-                    <div class="slide">
+                    <div class="slide slide2">
                         <div class="slideContent">
                             <div class="starBox">
                                 <img src="/images/default.png">
@@ -363,7 +394,7 @@
                     </div>
                 </div>
 
-                <div class="slide">
+                <div class="slide slide2">
                     <div class="slideContent" style="height:10%;">
                         <div class="starBox">
                             <img src="/images/default.png">
@@ -382,9 +413,7 @@
                     <div class="slideContent" tyle="height:50%;">
                         <p>
                             “I was skeptical about using an AI-powered chat tool,
-                             but Omnigpt has completely changed my mind.
-                              It's like having a virtual assistant that's always available to manage my conversations and keep me organized.
-                               I don't know how I managed without it!”
+                             but Omnigpt has completely changed my mind.”
                         </p>
                     </div>
                     <div class="slideContent" tyle="height:20%;">
@@ -415,9 +444,7 @@ transformed the way my team works together.
                 </div>
                 <div class="slideContent" tyle="height:50%;">
                     <p>
-                        “With the ability to seamlessly communicate across
-                        multiple channels, we are able to collaborate in real-time and make decisions faster than ever.
-                        Plus, the AI-powered chatbot saves us time and resources by handling routine tasks and inquiries.
+                        “The AI-powered chatbot saves us time and resources by handling routine tasks and inquiries.
                          I would highly recommend OmniGPT to any organization looking to improve their productivity and efficiency”
                     </p>
                 </div>
@@ -429,7 +456,7 @@ transformed the way my team works together.
                 </div>
             </div>
 
-            <div class="slide">
+            <div class="slide slide2">
                 <div class="slideContent" style="height:10%;">
                     <div class="starBox">
                         <img src="/images/default.png">
@@ -529,25 +556,28 @@ transformed the way my team works together.
     <div class="footer_container">
         <div class="footer_link--wrapper">
             <img class="logo" src="/images/Group 13342.png">
-            <div class="footer_link--items F1">
-                <a href="#"> Lorem Ipsum </a>
-                <a href="#"> Lorem Ipsum </a>
-                <a href="#"> Lorem Ipsum </a>
-                <a href="#"> Lorem Ipsum </a>
-                <a href="#"> Lorem Ipsum </a>
-            </div>
 
-            <div class="footer_link--items F2">
-                <a href="#" style="color: #1FC77E; font-weight: 600;"> Lorem Ipsum Dolar</a>
-                <a href="#"> Lorem Ipsum </a>
-                <a href="#"> Lorem Ipsum </a>
-                <a href="#"> Lorem Ipsum </a>
+            <div class="footer_link--itemsBox">
+                <div class="footer_link--items F1">
+                    <a href="#"> Lorem Ipsum </a>
+                    <a href="#"> Lorem Ipsum </a>
+                    <a href="#"> Lorem Ipsum </a>
+                    <a href="#"> Lorem Ipsum </a>
+                    <a href="#"> Lorem Ipsum </a>
+                </div>
+    
+                <div class="footer_link--items F2">
+                    <a href="#" style="color: #1FC77E; font-weight: 600;"> Lorem Ipsum Dolar</a>
+                    <a href="#"> Lorem Ipsum </a>
+                    <a href="#"> Lorem Ipsum </a>
+                    <a href="#"> Lorem Ipsum </a>
+                </div>
+    
+                <div class="footer_link--items F3">
+                    <a href="#"> Lorem Ipsum </a>
+                </div>
+    
             </div>
-
-            <div class="footer_link--items F3">
-                <a href="#"> Lorem Ipsum </a>
-            </div>
-
         </div>
             <p style="color: darkgoldenrod;
             font-family: 'FS Meridian Trial', sans-serif;">Code by Uncle Bams.</p>
